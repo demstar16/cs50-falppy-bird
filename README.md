@@ -7,7 +7,7 @@ These features are listed below and are documented in the code.
 - Reward functionality dependant on the score you get
 - Made Pipe generation more random in terms of distance between pipes and size of the gap
 ---
-<img src="demo.png">\
+<img src="demo.png">
 
 ### Adapted Files:
 - main.lua
