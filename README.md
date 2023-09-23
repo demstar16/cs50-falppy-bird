@@ -9,3 +9,10 @@ These features are listed below and are documented in the code.
 - Made Pipe generation more random in terms of distance between pipes and size of the gap
 ---
 <img src="demo.png">
+
+### Adapted Files:
+- main.lua
+- PipePair.lua
+- PauseState.lua
+- PlayState.lua
+- ScoreState.lua
