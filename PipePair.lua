@@ -13,7 +13,7 @@ PipePair = Class{}
 
 function PipePair:init(y)
     -- size of the gap between pipes
-    local gapHeight = math.random(80, 110)
+    local gapHeight = math.random(80, 110) -- DT - increase the range of different gap sizes
     -- flag to hold whether this pair has been scored (jumped through)
     self.scored = false
 

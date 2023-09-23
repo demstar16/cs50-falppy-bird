@@ -29,6 +29,7 @@ function PlayState:init()
 end
 
 function PlayState:update(dt)
+    -- DT - switch to the Pause State if P is pressed
     if love.keyboard.wasPressed('p') then
         NOT_PAUSED = false
         gStateMachine:change('pause',
@@ -38,7 +39,7 @@ function PlayState:update(dt)
     -- update timer for pipe spawning
     self.timer = self.timer + dt
 
-    -- that interval will be set to a random int
+    -- DT - interval for how fast the pipes spawn in
     self.pipeInterval = math.random(2, 30)
 
     -- spawn a new pipe pair every second and a half

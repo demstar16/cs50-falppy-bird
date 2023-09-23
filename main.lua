@@ -38,7 +38,7 @@ require 'states/CountdownState'
 require 'states/PlayState'
 require 'states/ScoreState'
 require 'states/TitleScreenState'
-require 'states/PauseState'
+require 'states/PauseState' -- DT - add the new created state to main
 
 require 'Bird'
 require 'Pipe'
@@ -112,6 +112,7 @@ function love.load()
         ['countdown'] = function() return CountdownState() end,
         ['play'] = function() return PlayState() end,
         ['score'] = function() return ScoreState() end,
+        -- DT - add our state to the state machine
         ['pause'] = function() return PauseState() end
     }
     gStateMachine:change('title')

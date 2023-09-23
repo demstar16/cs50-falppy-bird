@@ -1,11 +1,15 @@
+-- DT - created for the pause functionality
+
 PauseState = Class { __includes = BaseState }
 
+-- DT - get all the data from the current play state
 function PauseState:enter(params)
     self.score = params.score
     self.pipePairs = params.pipePairs
     self.bird = params.bird
 end
 
+-- DT - update function is simply waiting for a keyboard press (P)
 function PauseState:update(dt)
     if love.keyboard.wasPressed('p') then
         NOT_PAUSED = true

@@ -14,6 +14,8 @@ ScoreState = Class{__includes = BaseState}
     When we enter the score state, we expect to receive the score
     from the play state so we know what to render to the State.
 ]]
+
+-- DT - use the score value to determine what award is given to the player
 function ScoreState:enter(params)
     self.score = params.score
     if self.score < 5 then
@@ -41,8 +43,10 @@ function ScoreState:render()
 
     love.graphics.setFont(mediumFont)
     love.graphics.printf('Score: ' .. tostring(self.score), 0, 100, VIRTUAL_WIDTH, 'center')
-    love.graphics.printf("You've earnt a...", 0, 130, VIRTUAL_WIDTH, 'center')
 
+    love.graphics.printf("You've earnt a...", 0, 130, VIRTUAL_WIDTH, 'center')
+    
+    -- DT - show the "award" here
     love.graphics.draw(self.award, (VIRTUAL_WIDTH / 2) - 20, 150, 0, 0.1, 0.1)
 
     love.graphics.printf('Press Enter to Play Again!', 0, 210, VIRTUAL_WIDTH, 'center')
