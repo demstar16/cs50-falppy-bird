@@ -2,6 +2,9 @@
 This project was not created by me. It was created by Harvard University in the CS50 gaming course. I added features for a project.
 These features are listed below and are documented in the code.
 
+## Why
+I wanted to develop some game development skills to broaden my abilities, learn new technologies, and it has always been a curosity of mine to learn how games work.
+
 ## Features I added:
 - Pause functionality 
 - Reward functionality dependant on the score you get
